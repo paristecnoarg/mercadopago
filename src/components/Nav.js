@@ -22,7 +22,7 @@ const Nav = () => {
           src="https://static.mlstatic.com/org-img/mkt/email-mkt-assets/checkout-off/bag.png"
         />
         <h1 className="block mb-3 font-medium mt-3 font-proxima">
-          Emiliana Ortiz
+          Paris Tecno
         </h1>
       </nav>
       <hr className="mx-auto w-5/6" />

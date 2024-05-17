@@ -1,7 +1,12 @@
 import React, { useEffect, useState } from "react";
-import { useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import Nava from "./Nava";
 import Footer from "./Footer";
+import visa from "../imgs/visa (3).png";
+import mp from "../imgs/mp (1).png";
+import maste from "../imgs/master.png";
+import naranja from "../imgs/naranjax (1).png";
+import santa from "../imgs/santander.png";
 
 const Detail = () => {
   const location = useLocation();
@@ -113,7 +118,7 @@ const Detail = () => {
                   </div>
                 </div>
                 <div className="mt-2 w-full lg:order-1 lg:w-32 lg:flex-shrink-0">
-                  {/* <div class="flex flex-row items-start lg:flex-col">
+                  <div class="flex flex-row items-start lg:flex-col">
                     <button
                       type="button"
                       class="flex-0 aspect-square mb-3 h-20 overflow-hidden rounded-lg border-2 border-gray-900 text-center"
@@ -123,7 +128,8 @@ const Detail = () => {
                         src={img}
                         alt=""
                       />
-                    </button> */}
+                    </button>
+                  </div>
                   {/* <button
                       type="button"
                       class="flex-0 aspect-square mb-3 h-20 overflow-hidden rounded-lg border-2 border-transparent text-center"
@@ -268,16 +274,26 @@ const Detail = () => {
               </div>
 
               <div className="mt-5 w-full">
-                <button class="cursor-pointer relative group overflow-hidden border-2 px-8 py-2 border-green-500">
-                  <span class="font-bold text-white text-xl relative z-10 group-hover:text-green-500 duration-500">
-                    Comprar ahora
-                  </span>
-                  <span class="absolute top-0 left-0 w-full bg-green-500 duration-500 group-hover:-translate-x-full h-full"></span>
-                  <span class="absolute top-0 left-0 w-full bg-green-500 duration-500 group-hover:translate-x-full h-full"></span>
+                <Link
+                  to="/steps"
+                  state={{
+                    img: img,
+                    title: title,
+                    finalPrice: finalPrice,
+                    discount: discount,
+                  }}
+                >
+                  <button class="cursor-pointer relative group overflow-hidden border-2 px-8 py-2 border-green-500">
+                    <span class="font-bold text-white text-xl relative z-10 group-hover:text-green-500 duration-500">
+                      Comprar ahora
+                    </span>
+                    <span class="absolute top-0 left-0 w-full bg-green-500 duration-500 group-hover:-translate-x-full h-full"></span>
+                    <span class="absolute top-0 left-0 w-full bg-green-500 duration-500 group-hover:translate-x-full h-full"></span>
 
-                  <span class="absolute top-0 left-0 w-full bg-green-500 duration-500 delay-300 group-hover:-translate-y-full h-full"></span>
-                  <span class="absolute delay-300 top-0 left-0 w-full bg-green-500 duration-500 group-hover:translate-y-full h-full"></span>
-                </button>
+                    <span class="absolute top-0 left-0 w-full bg-green-500 duration-500 delay-300 group-hover:-translate-y-full h-full"></span>
+                    <span class="absolute delay-300 top-0 left-0 w-full bg-green-500 duration-500 group-hover:translate-y-full h-full"></span>
+                  </button>
+                </Link>
               </div>
 
               <ul class="mt-8 space-y-2">
@@ -318,6 +334,26 @@ const Detail = () => {
                   </svg>
                   Compra segura con Mercado Pago
                 </li>
+                <li>
+                  <button className="socialContainer containerOne">
+                    <img className="w-12 h-10" src={mp} alt="" />
+                  </button>
+
+                  <button className="socialContainer containerTwo">
+                    <img className="w-14 h-10" src={visa} alt="" />
+                  </button>
+
+                  <button className="socialContainer containerThree">
+                    <img className="w-15 h-9" src={naranja} alt="" />
+                  </button>
+
+                  <button className="socialContainer containerFour">
+                    <img src={santa} alt="" className="w-12 h-10" />
+                  </button>
+                  <button className="socialContainer containerFour">
+                    <img src={maste} alt="" className="w-14 h-10" />
+                  </button>
+                </li>
               </ul>
             </div>
 
@@ -333,7 +369,7 @@ const Detail = () => {
                     Información{" "}
                   </a>
 
-                  <a
+                  <div
                     href="#"
                     title=""
                     class="inline-flex items-center border-b-2 border-transparent py-4 text-sm font-medium text-gray-600"
@@ -343,7 +379,7 @@ const Detail = () => {
                       {" "}
                       1,209{" "}
                     </span>
-                  </a>
+                  </div>
                 </nav>
               </div>
 
