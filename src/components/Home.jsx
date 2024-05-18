@@ -1,4 +1,4 @@
-"use strict";
+// "use strict";
 import React from "react";
 import { Link } from "react-router-dom";
 import banerCelu from "../imgs/baner1.png";

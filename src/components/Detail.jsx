@@ -43,11 +43,11 @@ const Detail = () => {
   }, [location.state]); // Esto se ejecuta cada vez que cambian las props de la URL
 
   // Función para manejar el cambio de selección de radio
-  const handleRadioChange = (e) => {
-    // Actualiza el estado local y guarda en localStorage
-    setFinalPrice(e.target.value);
-    localStorage.setItem("finalPrice", e.target.value);
-  };
+  // const handleRadioChange = (e) => {
+  //   // Actualiza el estado local y guarda en localStorage
+  //   setFinalPrice(e.target.value);
+  //   localStorage.setItem("finalPrice", e.target.value);
+  // };
 
   useEffect(() => {
     // Guardar en localStorage cada vez que cambian los valores de img y title
