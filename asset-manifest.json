@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/mercadopago/static/css/main.4e3f59c8.css",
+    "main.js": "/mercadopago/static/js/main.c06b5c8d.js",
+    "static/media/banerpc.png": "/mercadopago/static/media/banerpc.0a094633c3d8d117ff98.png",
+    "static/media/master.png": "/mercadopago/static/media/master.6d2c50d15fd9afa268d7.png",
+    "static/media/visa (3).png": "/mercadopago/static/media/visa (3).d75497262148a4d40264.png",
+    "static/media/baner1.png": "/mercadopago/static/media/baner1.f67f5ac4eafdd409b40a.png",
+    "static/media/Screenshot_6.png": "/mercadopago/static/media/Screenshot_6.dae42df32d6994a27627.png",
+    "index.html": "/mercadopago/index.html",
+    "main.4e3f59c8.css.map": "/mercadopago/static/css/main.4e3f59c8.css.map",
+    "main.c06b5c8d.js.map": "/mercadopago/static/js/main.c06b5c8d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4e3f59c8.css",
+    "static/js/main.c06b5c8d.js"
+  ]
+}
